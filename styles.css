@@ -1,0 +1,417 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Home Section */
+.home-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.home-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.home-content h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.home-content h2 {
+  font-size: 24px;
+  color: #ff9800;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  padding: 50px;
+  background-color: #1e1e1e;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.about-content p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.resume-icon {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-icon:hover {
+  background-color: #e68900;
+}
+
+
+.about-con {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;  /* Adds space between two boxes */
+  align-items: flex-start;
+}
+
+.education-box {
+  background-color: #333;
+  padding: 20px;
+  width: 45%;  /* Both boxes will take up half of the row with space between */
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.education-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.education-box p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+
+/* Skills Section */
+#skills h2{
+  text-align: center;
+  padding: 50px;
+  background-color: #1e1e1e;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 50px;
+  background-color: #252525;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  background-color: #252525;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: white;
+  font-size: 18px;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* Experience Section */
+#experience {
+  padding: 50px;
+  background-color: #1e1e1e;
+}
+
+#experience h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fbfaf9;
+}
+
+.experience-item {
+  background-color: #333333;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.experience-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ff9800;
+}
+
+.experience-item p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.experience-item ul {
+  margin-left: 20px;
+}
+
+.experience-item ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.experience-item a {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 15px;
+  margin: 10px 5px 0 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.experience-item a:hover {
+  color: #e68900;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px;
+  background-color: #252525;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fbfaf9;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-content {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 70%;
+  transition: display 0.5s ease;
+}
+
+.project-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.project-navigation img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.project-navigation img:hover {
+  transform: scale(1.2);
+}
+
+/* Achievements Section */
+#achievements {
+  padding: 50px;
+  background-color: #1e1e1e;
+}
+
+#achievements h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #faf9f8;
+}
+
+
+.achievement-item a {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 15px;
+  margin: 10px 5px 0 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.achievement-item img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.achievement-item h3 {
+  font-size: 20px;
+  color: #ff9800;
+}
+
+.achievement p {
+  font-size: 16px;
+  color: white;
+}
+
+/* Contact Form */
+#contact h2 {
+  text-align: center;
+  padding: 50px;
+  background-color: #1e1e1e;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  width: 100%;
+  margin-bottom: 5px;
+  color: #ff9800;
+  text-align: left;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e68900;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+  }
+
+  .skills-grid {
+      flex-direction: column;
+  }
+}
