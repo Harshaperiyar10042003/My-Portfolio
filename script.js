@@ -247,3 +247,31 @@ document.addEventListener("DOMContentLoaded", () => {
   modal.addEventListener('click', (e)=>{ if(e.target === modal) closeVideo(); });
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.classList.contains('show')) closeVideo(); });
 })();
+
+
+(function(){
+  const modal = document.getElementById('videoModal1');
+  const video = document.getElementById('projectVideo1');
+  const openBtns = document.querySelectorAll('.js-open-video1');
+  const closeBtn = modal.querySelector('.video-modal__close1');
+
+  function openVideo(){
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    // play only after visible to avoid mobile block
+    video.play().catch(()=>{ /* autoplay may be blocked, controls are visible anyway */ });
+  }
+  function closeVideo(){
+    video.pause();
+    video.currentTime = 0;
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  openBtns.forEach(btn => btn.addEventListener('click', openVideo));
+  closeBtn.addEventListener('click', closeVideo);
+  modal.addEventListener('click', (e)=>{ if(e.target === modal) closeVideo(); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.classList.contains('show')) closeVideo(); });
+})();
