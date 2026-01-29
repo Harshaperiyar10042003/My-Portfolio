@@ -226,52 +226,46 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlide(0);
 });
 
-(function(){
-  const modal = document.getElementById('videoModal');
-  const openBtns = document.querySelectorAll('.js-open-video');
-  const closeBtn = modal.querySelector('.video-modal__close');
+(function () {
 
-  function openVideo(){
-    modal.classList.add('show');
-    modal.setAttribute('aria-hidden','false');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeVideo(){
-    modal.classList.remove('show');
-    modal.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
-  }
+  function setupModal(openClass, modalId, closeClass) {
+    const modal = document.getElementById(modalId);
+    const openBtns = document.querySelectorAll(openClass);
+    const closeBtn = modal.querySelector(closeClass);
 
-  openBtns.forEach(btn => btn.addEventListener('click', openVideo));
-  closeBtn.addEventListener('click', closeVideo);
-  modal.addEventListener('click', (e)=>{ if(e.target === modal) closeVideo(); });
-  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.classList.contains('show')) closeVideo(); });
-})();
+    function openModal() {
+      modal.classList.add('show');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
 
+    function closeModal() {
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
 
-(function(){
-  const modal = document.getElementById('videoModal1');
-  const video = document.getElementById('projectVideo1');
-  const openBtns = document.querySelectorAll('.js-open-video1');
-  const closeBtn = modal.querySelector('.video-modal__close1');
+    openBtns.forEach(btn => btn.addEventListener('click', openModal));
+    closeBtn.addEventListener('click', closeModal);
 
-  function openVideo(){
-    modal.classList.add('show');
-    modal.setAttribute('aria-hidden','false');
-    document.body.style.overflow = 'hidden';
-    // play only after visible to avoid mobile block
-    video.play().catch(()=>{ /* autoplay may be blocked, controls are visible anyway */ });
-  }
-  function closeVideo(){
-    video.pause();
-    video.currentTime = 0;
-    modal.classList.remove('show');
-    modal.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('show')) {
+        closeModal();
+      }
+    });
   }
 
-  openBtns.forEach(btn => btn.addEventListener('click', openVideo));
-  closeBtn.addEventListener('click', closeVideo);
-  modal.addEventListener('click', (e)=>{ if(e.target === modal) closeVideo(); });
-  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.classList.contains('show')) closeVideo(); });
+  // HopeHub
+  setupModal('.js-open-video', 'videoModal', '.video-modal__close');
+
+  // Nirmaan
+  setupModal('.js-open-video1', 'videoModal1', '.video-modal__close1');
+
+  // Fake Prescription
+  setupModal('.js-open-video2', 'videoModal2', '.video-modal__close2');
+
 })();
