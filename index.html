@@ -2,919 +2,966 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;800&display=swap"
-        rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <title>Harshavardhini • Portfolio</title>
-    <meta name="description"
-        content="Harshavardhini — Software Developer. I build clean, responsive, user-friendly web apps." />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- EmailJS (client-side) - used in script.js -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <title>Harshavardhini • Portfolio</title>
+  <meta name="description"
+    content="Harshavardhini — Software Developer. I build clean, responsive, user-friendly web apps." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- EmailJS (client-side) - used in script.js -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
-    <!-- ================== NAV ================== -->
-    <header class="nav">
-        <div class="container nav-inner">
-            <a href="#home" class="brand">
-                <span class="brand-mark">HP</span>
-                <span class="brand-text">Harshavardhini</span>
-            </a>
+  <!-- ================== NAV ================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">HP</span>
+        <span class="brand-text">Harshavardhini</span>
+      </a>
 
-            <button class="nav-toggle" aria-label="Open Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Skillset Demonstration</a>
-                <a href="#experience">Experience</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#contact">Contact</a>
-            </nav>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Skillset Demonstration</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================== HERO ================== -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy" data-aos="fade-up">
+        <div class="hello-pill">👋 Hi, I’m</div>
+        <h1 class="hero-title">Harshavardhini P P</h1>
+        <h2 class="hero-subtitle">
+          <span id="typing"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I build clean, responsive, user-friendly web apps and love turning ideas into working products.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-rocket-launch"></i> View
+            Projects</a>
+          <a class="btn btn-ghost" href="images/Harshavardhini-Software Developer Resume.pdf" target="_blank"
+            rel="noopener">
+            <i class="fa-solid fa-file-lines"></i> View Resume
+          </a>
         </div>
-    </header>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/harshavardhini-p-p-791765277" target="_blank" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Harshaperiyar10042003" target="_blank" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="mailto:harshaperiyar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
 
-    <!-- ================== HERO ================== -->
-    <section id="home" class="hero">
-        <div class="container hero-inner">
-            <div class="hero-copy" data-aos="fade-up">
-                <div class="hello-pill">👋 Hi, I’m</div>
-                <h1 class="hero-title">Harshavardhini P P</h1>
-                <h2 class="hero-subtitle">
-                    <span id="typing"></span><span class="cursor">|</span>
-                </h2>
-                <p class="hero-desc">
-                    I build clean, responsive, user-friendly web apps and love turning ideas into working products.
+      <div class="hero-visual" data-aos="zoom-in">
+        <div class="avatar-wrap">
+          <img src="images/harsha image.jpeg" alt="Harshavardhini profile" class="avatar" />
+          <div class="glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+
+
+
+  <!-- ABOUT (unique stacked style with wavy divider) -->
+  <section id="about" class="about-section">
+    <div class="about-wrapper">
+
+      <!-- Top Quote -->
+      <h2 class="quote">
+        “Innovation begins with curiosity — and my curiosity drives me to explore, build, and solve through
+        technology.”
+      </h2>
+
+      <div class="about-content">
+        <!-- Left Side: Story -->
+        <div class="about-story">
+          <div class="info-container">
+  
+
+  <p class="info-line">
+    Hi, I’m <strong class="highlight-name">Harshavardhini P P</strong>, a
+    <strong>2025 B.E. ECE graduate</strong> from Velammal Engineering College,
+    passionate about building clean, reliable, and user-focused web applications.
+  </p>
+
+  <p class="info-line">
+    I completed <strong>Java Full-Stack training</strong> under the
+    <strong>Infosys Foundation – Nirmaan Organization</strong>, gaining hands-on
+    experience in Java, JSP, JDBC, HTML, CSS, JavaScript, and MySQL.
+  </p>
+
+  <p class="info-line">
+    My project experience includes <strong>HopeHub</strong> (live project),
+    <strong>Nirmaan Management System</strong> (course project), and
+    <strong>Fake Prescription Detector</strong>, a Java-based system for
+    verifying medical prescriptions.
+  </p>
+
+  <p class="info-line">
+    I also built multiple <strong>React projects</strong> including a portfolio,
+    e-commerce site, Weather App, BMI Calculator, QR Code Generator, and more.
+  </p>
+
+  <p class="info-line">
+    <ul class="tech-cards">
+    <li><strong>Languages:</strong> Java, JavaScript</li>
+    <li><strong>Frontend:</strong> HTML, CSS, React.js</li>
+    <li><strong>Backend:</strong> Servlets, JSP, JDBC</li>
+    <li><strong>Database:</strong> MySQL</li>
+    <li><strong>Tools:</strong> Git, VS Code, Eclipse</li>
+    <li><strong>Core Skills:</strong> Full-Stack Development, Debugging, Responsive Design, Problem Solving</li>
+  </ul>
+  </p>
+
+          </div>
+        </div>
+
+        <!-- Right Side: Timeline -->
+        <div class="about-timeline">
+          <div class="timeline-item neon-card">
+            <div class="timeline-icon">
+              📍
+              <div class="glow"></div>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Location</h4>
+              <p>Chennai, India</p>
+            </div>
+          </div>
+          <div class="timeline-item neon-card">
+            <div class="timeline-icon">
+              🎓
+              <div class="glow"></div>
+            </div>
+
+            <div class="timeline-content">
+              <h4>B.E. ECE</h4>
+              <p>Velammal Engineering College — 2025 Graduate</p>
+            </div>
+          </div>
+          <div class="timeline-item neon-card">
+            <div class="timeline-icon">
+              💻
+              <div class="glow"></div>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Java Full Stack Development</h4>
+              <p>Nirmaan Organization — Certified</p>
+            </div>
+          </div>
+          <div class="timeline-item neon-card">
+            <div class="timeline-icon">
+              🛠
+              <div class="glow"></div>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Internship</h4>
+              <p>DLK Technologies — Web Development</p>
+            </div>
+          </div>
+
+          <div class="timeline-item neon-card">
+            <div class="timeline-icon">
+              🚀
+              <div class="glow"></div>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Projects</h4>
+              <p>Portfolio Website, Friend's Portfolio, E-Commerce Site, HopeHub, Nirmaan Management Portal, Fake Prescription Detector.
                 </p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-rocket-launch"></i> View
-                        Projects</a>
-                    <a class="btn btn-ghost" href="images/Harshavardhini-Software Developer Resume.pdf" target="_blank"
-                        rel="noopener">
-                        <i class="fa-solid fa-file-lines"></i> View Resume
-                    </a>
-                </div>
-                <div class="social-row">
-                    <a href="https://www.linkedin.com/in/harshavardhini-p-p-791765277" target="_blank"
-                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Harshaperiyar10042003" target="_blank" aria-label="GitHub"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="mailto:harshaperiyar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                </div>
             </div>
+          </div>
 
-            <div class="hero-visual" data-aos="zoom-in">
-                <div class="avatar-wrap">
-                    <img src="images/harsha image.jpeg" alt="Harshavardhini profile" class="avatar" />
-                    <div class="glow"></div>
-                </div>
-            </div>
+
         </div>
-        <div class="hero-bg"></div>
-    </section>
+      </div>
+
+      <!-- Bottom Motto -->
+      <p class="motto">
+        <em>“Learn continuously, adapt quickly, and create value wherever possible.”</em>
+      </p>
+
+    </div>
+  </section>
 
 
 
+  <!-- EDUCATION (vertical timeline) -->
+  <section id="education" class="education">
+    <div class="about-card glass" data-aos="fade-left">
+      <h4 class="sub-title">Education Journey</h4>
 
-    <!-- ABOUT (unique stacked style with wavy divider) -->
-    <section id="about" class="about-section">
-        <div class="about-wrapper">
+      <div class="edu-stepper">
+        <!-- SSLC -->
+        <div class="edu">
+          <img src="images/ssms logo.avif" alt="TI School logo">
+          <div class="edu-title">Sree Saraswathi Matriculation School</div>
+          <div class="edu-meta">SSLC • 2018–2019 • 89%</div>
+          <div class="edu-meta">Focus: Science & Mathematics</div>
+        </div>
 
-            <!-- Top Quote -->
-            <h2 class="quote">
-                “Innovation begins with curiosity — and my curiosity drives me to explore, build, and solve through
-                technology.”
-            </h2>
+        <!-- HSC -->
+        <div class="edu">
+          <img src="images/ti logo.jpeg" alt="TI School logo">
+          <div class="edu-title">TI Matriculation Hr. Sec. School</div>
+          <div class="edu-meta">HSC (Bio-Maths) • 2019–2021 • 89.87%</div>
+          <div class="edu-meta">Core Subjects: Physics, Chemistry, Math, Biology</div>
+        </div>
 
-            <div class="about-content">
-                <!-- Left Side: Story -->
-                <div class="about-story">
-                    <div class="info-container">
-                        <p class="info-line">
-                            I am <strong class="highlight-name">Harshavardhini</strong> from Chennai, a 2025 B.E.
-                            graduate in Electronics and Communication Engineering from Velammal Engineering College. My
-                            vision is to create meaningful contributions in a competitive world while growing alongside
-                            the organization I serve.
-                        </p>
-                        <p class="info-line">
-                            Over the past <strong>8 months</strong>, I’ve immersed myself in <strong>Java Full Stack
-                                Development</strong>, gaining expertise in HTML, CSS, JavaScript, Java, and MySQL. I
-                            began my journey with a web development internship at <strong>DLK Technologies</strong>,
-                            then expanded my skills through self-driven projects — including my personal portfolio, a
-                            friend’s portfolio, and a functional e-commerce site.
-                        </p>
-                        <p class="info-line">
-                            I completed the <strong>Java Full Stack Development program</strong> at <strong>Nirmaan
-                                Organization</strong>, where I also explored automation testing tools, QA processes, and
-                            Business Analysis fundamentals.
-                        </p>
-                        <p class="info-line">
-                            One of my proudest achievements is <strong>HopeHub</strong> — a live project that honed my
-                            technical skills, creative thinking, and real-time application testing experience.
-                        </p>
-                    </div>
-                </div>
+        <!-- UG -->
+        <div class="edu">
+          <img src="images/vellamal logo.png" alt="Velammal logo">
+          <div class="edu-title">Velammal Engineering College</div>
+          <div class="edu-meta">B.E. Electronics & Communication • 2021–2025</div>
+          <div class="edu-meta">CGPA: 8.38 • Student Member — IETE</div>
+        </div>
 
-                <!-- Right Side: Timeline -->
-                <div class="about-timeline">
-                    <div class="timeline-item neon-card">
-                        <div class="timeline-icon">
-                            📍
-                            <div class="glow"></div>
-                        </div>
+        <!-- Certification -->
+        <div class="edu">
+          <img src="images/nirmaan logo.jpeg" alt="Nirmaan Organization logo">
+          <div class="edu-title">Nirmaan Organization</div>
+          <div class="edu-meta">Java Full Stack Certification</div>
+          <div class="edu-meta">Skills: Java, JDBC, MySQL, Deployment</div>
+        </div>
+      </div>
+    </div>
 
-                        <div class="timeline-content">
-                            <h4>Location</h4>
-                            <p>Chennai, India</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item neon-card">
-                        <div class="timeline-icon">
-                            🎓
-                            <div class="glow"></div>
-                        </div>
+  </section>
 
-                        <div class="timeline-content">
-                            <h4>B.E. ECE</h4>
-                            <p>Velammal Engineering College — 2025 Graduate</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item neon-card">
-                        <div class="timeline-icon">
-                            💻
-                            <div class="glow"></div>
-                        </div>
+  <!-- SKILLS (carousel) -->
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill-carousel" id="skill-carousel">
+        <div class="skill-track">
+          <!-- Put many skill cards here -->
+          <div class="skill-slab">
+            <img src="images/html logo.png" alt="HTML"><span>HTML</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/css logo.png" alt="CSS"><span>CSS</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/javascript logo.png" alt="JavaScript"><span>JavaScript</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/react logo.png" alt="React"><span>React.js</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/java logo.png" alt="Java"><span>Java</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/sql logo.png" alt="MySQL"><span>MySQL</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/jdbc.png" alt="JDBC"><span>JDBC</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/github logo.png" alt="GitHub"><span>Git & GitHub</span>
+          </div>
 
-                        <div class="timeline-content">
-                            <h4>Java Full Stack Development</h4>
-                            <p>Nirmaan Organization — Certified</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item neon-card">
-                        <div class="timeline-icon">
-                            🛠
-                            <div class="glow"></div>
-                        </div>
+          <div class="skill-slab">
+            <img src="images/netlify logo.png" alt="Netlify"><span>Netlify</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/vscode.jpeg" alt="VSCode"><span>VS Code</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/c logo.png" alt="C"><span>C Programming</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/networking logo.png" alt="Networking"><span>Networking</span>
+          </div>
+          <div class="skill-slab">
+            <img src="images/creative art logo.jpeg" alt="Creativity"><span>Creativity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                        <div class="timeline-content">
-                            <h4>Internship</h4>
-                            <p>DLK Technologies — Web Development</p>
-                        </div>
-                    </div>
+  <!-- DEMOS (video demos for HopeHub and Nirmaan) -->
+  <section id="projects" class="projects">
+    <section id="section1" class="section1">
+      <div class="container">
+        <h3 class="section1-title">🚀 SKILLSET DEMONSTRATION</h3>
+        <p class="section1-subtitle" data-aos="fade-up" data-aos-delay="50">
+          A showcase of my projects, experiments, and live applications
+        </p>
 
-                    <div class="timeline-item neon-card">
-                        <div class="timeline-icon">
-                            🚀
-                            <div class="glow"></div>
-                        </div>
+        <!-- Grid for all projects -->
+        <div class="cards1">
 
-                        <div class="timeline-content">
-                            <h4>Projects</h4>
-                            <p>Portfolio Website, Friend's Portfolio, E-Commerce Site, HopeHub, Nirmaan Management
-                                System</p>
-                        </div>
-                    </div>
-
-
-                </div>
+          <!-- My Portfolio -->
+          <a class="card1" href="https://harshaperiyar10042003.github.io/My-Portfolio/" target="_blank"
+            data-aos="zoom-in">
+            <h4>My Portfolio</h4>
+            <p>Showcase of skills, projects & achievements.</p>
+            <div class="tech-row1">
+              <span>HTML</span><span>CSS</span><span>JS</span>
             </div>
+            <span class="card1-cta">View Project →</span>
+          </a>
 
-            <!-- Bottom Motto -->
-            <p class="motto">
-                <em>“Learn continuously, adapt quickly, and create value wherever possible.”</em>
+          <!-- E-commerce Website -->
+          <a class="card1" href="https://harshaperiyar10042003.github.io/JHG-Fancy-Store/" target="_blank"
+            data-aos="zoom-in" data-aos-delay="50">
+            <h4>E-commerce Website</h4>
+            <p>Storefront with responsive UI and product listings.</p>
+            <div class="tech-row1">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <span class="card1-cta">View Project →</span>
+          </a>
+
+          <!-- Mini Project Website -->
+          <a class="card1" href="https://harshaperiyar10042003.github.io/Mini-Project/" target="_blank"
+            data-aos="zoom-in" data-aos-delay="100">
+            <h4>Mini Project Website</h4>
+            <p>Creative concepts & structured layouts.</p>
+            <div class="tech-row1">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <span class="card1-cta">View Project →</span>
+          </a>
+
+          <!-- React.js Projects -->
+          <a class="card1" href="https://harshaperiyar10042003.github.io/React-Projects/" target="_blank"
+            data-aos="zoom-in" data-aos-delay="150">
+            <h4>React.js Projects</h4>
+            <p>Interactive apps demonstrating state & hooks.</p>
+            <div class="tech-row1">
+              <span>React</span><span>JS</span><span>HTML</span><span>CSS</span>
+            </div>
+            <span class="card1-cta">View Project →</span>
+          </a>
+
+          <!-- Carol’s Portfolio -->
+          <a class="card1" href="https://harshaperiyar10042003.github.io/Carol_Portfolio/" target="_blank"
+            data-aos="zoom-in" data-aos-delay="200">
+            <h4>Carol’s Portfolio</h4>
+            <p>Client website built with HTML, CSS, and JS.</p>
+            <div class="tech-row1">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <span class="card1-cta">View Project →</span>
+          </a>
+
+          <!-- HopeHub (Live Project - Demo Video) -->
+          <!-- Your Project Card -->
+          <a class="card1 card1-accent js-open-video" href="javascript:void(0)" data-aos="zoom-in" data-aos-delay="250">
+            <div class="badge1 glow1">Live Project</div>
+            <h4>HopeHub</h4>
+            <p>A dynamic live project improving real-time collaboration and testing insights.</p>
+            <div class="tech-row1">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>MySQL</span><span>Java</span><span>JDBC</span>
+            </div>
+            <span type="button" class="card1-cta">Demo Video →</span>
+          </a>
+
+          <!-- Popup Modal -->
+          <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="video-modal__content">
+              <button type="button" class="video-modal__close" aria-label="Close video">&times;</button>
+
+              <!-- LinkedIn Preview -->
+              <div class="linkedin-preview">
+                <h3 style="color:white; margin-bottom:15px;">Watch the demo on LinkedIn</h3>
+                <a href="https://www.linkedin.com/posts/harshavardhini-p-p-791765277_hopehub-mystory-fromscratch-activity-7357502149095796736-FC7K"
+                  target="_blank" class="linkedin-btn">
+                  ▶ Open LinkedIn Video
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Nirmaan Institute Management (Course Project - Demo Video) -->
+          <a class="card1 card1-accent js-open-video1" href="javascript:void(0)" data-aos="zoom-in"
+            data-aos-delay="250">
+            <div class="badge1 glow1">Course Project</div>
+            <h4>Nirmaan <br> Management System</h4>
+            <p>End-to-end academic management flows, from users to records.</p>
+            <div class="tech-row1">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>MySQL</span><span>Java</span><span>JDBC</span>
+            </div>
+            <span type="button" class="card1-cta">Demo Video →</span>
+          </a>
+
+          <!-- Popup Modal -->
+          <div id="videoModal1" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="video-modal__content">
+              <button type="button" class="video-modal__close1" aria-label="Close video">&times;</button>
+
+              <!-- LinkedIn Preview -->
+              <div class="linkedin-preview" style="text-align:center; padding:30px;">
+                <h3 style="color:white; margin-bottom:20px;">Watch the demo on LinkedIn</h3>
+                <a href="https://www.linkedin.com/posts/harshavardhini-p-p-791765277_nirmaanmanagementportal-javafullstack-studentproject-activity-7363994181389746179-WfGM?utm_source=share&utm_medium=member_android&rcm=ACoAAEOQ0B0BBRkjn3rvyVIyFVL-OXKrR42Udso"
+                  target="_blank" class="linkedin-btn">
+                  ▶ Open LinkedIn Video
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fake Prescription Detector (Final Year Project - Demo Video) -->
+          <a class="card1 card1-accent js-open-video2" href="javascript:void(0)" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="badge1 glow1">Junior's Final Year Project</div>
+
+            <h4>Fake <br> Prescription Detector</h4>
+
+            <p>
+              Secure system to detect and verify fake medical prescriptions
+              and database-backed authentication.
             </p>
 
-        </div>
-    </section>
-
-
-
-    <!-- EDUCATION (vertical timeline) -->
-    <section id="education" class="education">
-        <div class="about-card glass" data-aos="fade-left">
-            <h4 class="sub-title">Education Journey</h4>
-
-            <div class="edu-stepper">
-                <!-- SSLC -->
-                <div class="edu">
-                    <img src="images/ssms logo.avif" alt="TI School logo">
-                    <div class="edu-title">Sree Saraswathi Matriculation School</div>
-                    <div class="edu-meta">SSLC • 2018–2019 • 89%</div>
-                    <div class="edu-meta">Focus: Science & Mathematics</div>
-                </div>
-
-                <!-- HSC -->
-                <div class="edu">
-                    <img src="images/ti logo.jpeg" alt="TI School logo">
-                    <div class="edu-title">TI Matriculation Hr. Sec. School</div>
-                    <div class="edu-meta">HSC (Bio-Maths) • 2019–2021 • 89.87%</div>
-                    <div class="edu-meta">Core Subjects: Physics, Chemistry, Math, Biology</div>
-                </div>
-
-                <!-- UG -->
-                <div class="edu">
-                    <img src="images/vellamal logo.png" alt="Velammal logo">
-                    <div class="edu-title">Velammal Engineering College</div>
-                    <div class="edu-meta">B.E. Electronics & Communication • 2021–2025</div>
-                    <div class="edu-meta">CGPA: 8.38 • Student Member — IETE</div>
-                </div>
-
-                <!-- Certification -->
-                <div class="edu">
-                    <img src="images/nirmaan logo.jpeg" alt="Nirmaan Organization logo">
-                    <div class="edu-title">Nirmaan Organization</div>
-                    <div class="edu-meta">Java Full Stack Certification</div>
-                    <div class="edu-meta">Skills: Java, JDBC, MySQL, Deployment</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- SKILLS (carousel) -->
-    <section id="skills" class="skills">
-        <div class="wrap">
-            <h2 class="section-title">Skills</h2>
-            <div class="skill-carousel" id="skill-carousel">
-                <div class="skill-track">
-                    <!-- Put many skill cards here -->
-                    <div class="skill-slab">
-                        <img src="images/html logo.png" alt="HTML"><span>HTML</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/css logo.png" alt="CSS"><span>CSS</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/javascript logo.png" alt="JavaScript"><span>JavaScript</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/react logo.png" alt="React"><span>React.js</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/java logo.png" alt="Java"><span>Java</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/sql logo.png" alt="MySQL"><span>MySQL</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/jdbc.png" alt="JDBC"><span>JDBC</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/github logo.png" alt="GitHub"><span>Git & GitHub</span>
-                    </div>
-
-                    <div class="skill-slab">
-                        <img src="images/netlify logo.png" alt="Netlify"><span>Netlify</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/vscode.jpeg" alt="VSCode"><span>VS Code</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/c logo.png" alt="C"><span>C Programming</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/networking logo.png" alt="Networking"><span>Networking</span>
-                    </div>
-                    <div class="skill-slab">
-                        <img src="images/creative art logo.jpeg" alt="Creativity"><span>Creativity</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEMOS (video demos for HopeHub and Nirmaan) -->
-    <section id="projects" class="projects">
-        <section id="section1" class="section1">
-            <div class="container">
-                <h3 class="section1-title">🚀 SKILLSET DEMONSTRATION</h3>
-                <p class="section1-subtitle" data-aos="fade-up" data-aos-delay="50">
-                    A showcase of my projects, experiments, and live applications
-                </p>
-
-                <!-- Grid for all projects -->
-                <div class="cards1">
-
-                    <!-- My Portfolio -->
-                    <a class="card1" href="https://harshaperiyar10042003.github.io/My-Portfolio/" target="_blank"
-                        data-aos="zoom-in">
-                        <h4>My Portfolio</h4>
-                        <p>Showcase of skills, projects & achievements.</p>
-                        <div class="tech-row1">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <span class="card1-cta">View Project →</span>
-                    </a>
-
-                    <!-- E-commerce Website -->
-                    <a class="card1" href="https://harshaperiyar10042003.github.io/JHG-Fancy-Store/" target="_blank"
-                        data-aos="zoom-in" data-aos-delay="50">
-                        <h4>E-commerce Website</h4>
-                        <p>Storefront with responsive UI and product listings.</p>
-                        <div class="tech-row1">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <span class="card1-cta">View Project →</span>
-                    </a>
-
-                    <!-- Mini Project Website -->
-                    <a class="card1" href="https://harshaperiyar10042003.github.io/Mini-Project/" target="_blank"
-                        data-aos="zoom-in" data-aos-delay="100">
-                        <h4>Mini Project Website</h4>
-                        <p>Creative concepts & structured layouts.</p>
-                        <div class="tech-row1">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <span class="card1-cta">View Project →</span>
-                    </a>
-
-                    <!-- React.js Projects -->
-                    <a class="card1" href="https://harshaperiyar10042003.github.io/React-Projects/" target="_blank"
-                        data-aos="zoom-in" data-aos-delay="150">
-                        <h4>React.js Projects</h4>
-                        <p>Interactive apps demonstrating state & hooks.</p>
-                        <div class="tech-row1">
-                            <span>React</span><span>JS</span><span>HTML</span><span>CSS</span>
-                        </div>
-                        <span class="card1-cta">View Project →</span>
-                    </a>
-
-                    <!-- Carol’s Portfolio -->
-                    <a class="card1" href="https://harshaperiyar10042003.github.io/Carol_Portfolio/" target="_blank"
-                        data-aos="zoom-in" data-aos-delay="200">
-                        <h4>Carol’s Portfolio</h4>
-                        <p>Client website built with HTML, CSS, and JS.</p>
-                        <div class="tech-row1">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <span class="card1-cta">View Project →</span>
-                    </a>
-
-                    <!-- HopeHub (Live Project - Demo Video) -->
-                    <!-- Your Project Card -->
-                    <a class="card1 card1-accent js-open-video" href="javascript:void(0)" data-aos="zoom-in"
-                        data-aos-delay="250">
-                        <div class="badge1 glow1">Live Project</div>
-                        <h4>HopeHub</h4>
-                        <p>A dynamic live project improving real-time collaboration and testing insights.</p>
-                        <div class="tech-row1">
-                            <span>HTML</span><span>CSS</span><span>JS</span><span>MySQL</span><span>Java</span><span>JDBC</span>
-                        </div>
-                        <span type="button" class="card1-cta">Demo Video →</span>
-                    </a>
-
-                    <!-- Popup Modal -->
-                    <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
-                        <div class="video-modal__content">
-                            <button type="button" class="video-modal__close" aria-label="Close video">&times;</button>
-
-                            <!-- LinkedIn Preview -->
-                            <div class="linkedin-preview">
-                                <h3 style="color:white; margin-bottom:15px;">Watch the demo on LinkedIn</h3>
-                                <a href="https://www.linkedin.com/posts/harshavardhini-p-p-791765277_hopehub-mystory-fromscratch-activity-7357502149095796736-FC7K"
-                                    target="_blank" class="linkedin-btn">
-                                    ▶ Open LinkedIn Video
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Nirmaan Institute Management (Course Project - Demo Video) -->
-                    <a class="card1 card1-accent js-open-video1" href="javascript:void(0)" data-aos="zoom-in"
-                        data-aos-delay="250">
-                        <div class="badge1 glow1">Course Project</div>
-                        <h4>Nirmaan <br> Management System</h4>
-                        <p>End-to-end academic management flows, from users to records.</p>
-                        <div class="tech-row1">
-                            <span>HTML</span><span>CSS</span><span>JS</span><span>MySQL</span><span>Java</span><span>JDBC</span>
-                        </div>
-                        <span type="button" class="card1-cta">Demo Video →</span>
-                    </a>
-
-                    <!-- Popup Modal -->
-                    <div id="videoModal1" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
-                        <div class="video-modal__content">
-                            <button type="button" class="video-modal__close1" aria-label="Close video">&times;</button>
-
-                            <!-- LinkedIn Preview -->
-                            <div class="linkedin-preview" style="text-align:center; padding:30px;">
-                                <h3 style="color:white; margin-bottom:20px;">Watch the demo on LinkedIn</h3>
-                                <a href="https://www.linkedin.com/posts/harshavardhini-p-p-791765277_nirmaanmanagementportal-javafullstack-studentproject-activity-7363994181389746179-WfGM?utm_source=share&utm_medium=member_android&rcm=ACoAAEOQ0B0BBRkjn3rvyVIyFVL-OXKrR42Udso"
-                                    target="_blank" class="linkedin-btn">
-                                    ▶ Open LinkedIn Video
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-        </section>
-        <br>
-
-        <!-- PROJECTS (side by side boxes) -->
-
-        <div class="wrap">
-            <h2 class="section-title">Academic Projects</h2>
-
-            <div class="projects-grid two-columns">
-                <!-- Project 1 -->
-                <div class="proj-showcase">
-                    <div class="proj-left">
-                        <h3>Wireless Electronic Noticeboard</h3>
-                        <p>
-                            Built a <strong>real-time wireless noticeboard</strong> using
-                            <strong>Arduino UNO</strong> and <strong>HC-05 Bluetooth</strong>.
-                            Handled both hardware interfacing and mobile app integration.
-                        </p>
-                        <div class="proj-meta">
-                            <span>Arduino</span><span>Bluetooth</span><span>Embedded</span>
-                        </div>
-                    </div>
-                    <div class="proj-right">
-                        <img src="images/minidemo.jpeg" alt="Noticeboard Project" />
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="proj-showcase">
-                    <div class="proj-left">
-                        <h3>Voice-Controlled Automated Wheelchair</h3>
-                        <p>
-                            Prototype for mobility assistance with <strong>voice commands</strong>
-                            and <strong>GSM alerts</strong>. Integrated sensors for safety and monitoring.
-                        </p>
-                        <div class="proj-meta">
-                            <span>Embedded</span><span>IoT</span><span>GSM</span>
-                        </div>
-                    </div>
-                    <div class="proj-right">
-                        <img src="images/finaldemo.jpeg" alt="Wheelchair Project" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================== EXPERIENCE ================== -->
-    <section id="experience" class="section alt">
-        <div class="container">
-            <h3 class="section-title" data-aos="fade-up">Experience</h3>
-
-            <!-- Experience Carousel -->
-            <div id="experience-carousel" data-aos="fade-up">
-
-                <!-- Carousel Flex -->
-                <div class="carousel">
-                    <!-- Left Button -->
-                    <button class="car-btn prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-
-                    <!-- Slides -->
-                    <div class="car-viewport">
-                        <div class="xp-track">
-
-                            <!-- Slide 1 -->
-                            <!-- Slide 1 -->
-                            <article class="xp-card glass">
-                                <div class="xp-content">
-                                    <div class="xp-text">
-                                        <div class="xp-head">
-                                            <img class="xp-logo-inline" src="images/dlk carrer development loo.jpeg"
-                                                alt="DLK Logo">
-                                            <h4>DLK Career Development — Web Developer Intern</h4>
-                                            <span class="xp-time">Nov 2023 – Dec 2023</span>
-                                        </div>
-
-                                        <p>
-                                            Built responsive web pages using <strong>HTML, CSS, and JavaScript</strong>.
-                                            Collaborated with designers to enhance UI/UX and optimized website
-                                            performance across devices.
-                                        </p>
-                                        <ul class="xp-list">
-                                            <li>Developed dynamic components and interactive layouts.</li>
-                                            <li>Implemented responsive design principles and debugging workflow.</li>
-                                            <li>Worked in an agile environment, learning team collaboration and version
-                                                control.</li>
-                                        </ul>
-                                        <div class="xp-actions">
-                                            <a class="btn-chip"
-                                                href="images/web development internship at DLK Carrer Development.png"
-                                                target="_blank">View Certificate</a>
-                                            <a class="btn-chip" href="https://dlkcareerdevelopment.com/"
-                                                target="_blank">Company Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <!-- Slide 2 -->
-                            <article class="xp-card glass">
-                                <div class="xp-content">
-                                    <div class="xp-text">
-                                        <div class="xp-head">
-                                            <img class="xp-logo-inline" src="images/letsgrowmore_logo.jpeg"
-                                                alt="LGM Logo">
-                                            <h4>Let’s Grow More — Web Developer Intern</h4>
-                                            <span class="xp-time">Aug 2023</span>
-                                        </div>
-                                        <p>
-                                            Contributed to front-end development of web apps, focusing on
-                                            <strong>responsive layouts</strong> and <strong>user-centric
-                                                interfaces</strong>. Enhanced accessibility and cross-browser
-                                            compatibility.
-                                        </p>
-                                        <ul class="xp-list">
-                                            <li>Delivered clean, maintainable, and reusable code.</li>
-                                            <li>Optimized interaction states and animations for better user engagement.
-                                            </li>
-                                            <li>Worked with Git for version control and collaborated with the
-                                                development team efficiently.</li>
-                                        </ul>
-                                        <div class="xp-actions">
-                                            <a class="btn-chip" href="images/web development internship at lgm.pdf"
-                                                target="_blank">View Certificate</a>
-                                            <a class="btn-chip" href="https://letsgrowmore.in/" target="_blank">Company
-                                                Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <!-- Slide 3 -->
-                            <article class="xp-card glass">
-                                <div class="xp-content">
-                                    <div class="xp-text">
-                                        <div class="xp-head">
-                                            <img class="xp-logo-inline" src="images/nsic logo.jpeg" alt="NSIC Logo">
-                                            <h4>NSIC Technical Services Centre — Intern</h4>
-                                            <span class="xp-time">Jun 2023</span>
-                                        </div>
-                                        <p>
-                                            Hands-on experience with network setup and troubleshooting. Focused on
-                                            <strong>performance optimization</strong> and <strong>network
-                                                security</strong> in practical IoT and networking scenarios.
-                                        </p>
-                                        <ul class="xp-list">
-                                            <li>Configured networking devices and monitored IoT systems.</li>
-                                            <li>Learned practical skills in network protocols and security.</li>
-                                            <li>Enhanced problem-solving and technical documentation abilities.</li>
-                                        </ul>
-                                        <div class="xp-actions">
-                                            <a class="btn-chip" href="images/Networking Internship NSIC .jpeg"
-                                                target="_blank">View Certificate</a>
-                                            <a class="btn-chip" href="https://www.nsic.co.in/" target="_blank">Company
-                                                Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <!-- Slide 4 -->
-                            <article class="xp-card glass">
-                                <div class="xp-content">
-                                    <div class="xp-text">
-                                        <div class="xp-head">
-                                            <img class="xp-logo-inline" src="images/bsnl logo.jpeg" alt="BSNL Logo">
-                                            <h4>BSNL — In-plant Training</h4>
-                                            <span class="xp-time">Jan 2023</span>
-                                        </div>
-                                        <p>
-                                            Gained exposure to telecom network setup and infrastructure management.
-                                            Observed operational protocols and reliability practices in large-scale
-                                            telecom environments.
-                                        </p>
-                                        <ul class="xp-list">
-                                            <li>Studied network architecture and infrastructure management.</li>
-                                            <li>Learned practical aspects of scaling, redundancy, and maintenance.</li>
-                                            <li>Understood the importance of service reliability and uptime in telecom
-                                                systems.</li>
-                                        </ul>
-                                        <div class="xp-actions">
-                                            <a class="btn-chip" href="images/telecommunication internship at bsnl.pdf"
-                                                target="_blank">View Certificate</a>
-                                            <a class="btn-chip" href="https://www.bsnl.co.in/" target="_blank">Company
-                                                Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <!-- Slide 5 -->
-                            <article class="xp-card glass">
-                                <div class="xp-content">
-                                    <div class="xp-text">
-                                        <div class="xp-head">
-                                            <img class="xp-logo-inline" src="images/nirmaan logo.jpeg"
-                                                alt="Nirmaan Logo">
-                                            <h4>Nirmaan Organization — 3-Month Training Program</h4>
-                                            <span class="xp-time">May 2023 – Jul 2023</span>
-                                        </div>
-                                        <p>
-                                            Completed an intensive 3-month program on <strong>full-stack development,
-                                                Java, and web technologies</strong>. Focused on practical projects,
-                                            teamwork, and real-world problem solving.
-                                        </p>
-                                        <ul class="xp-list">
-                                            <li>Worked on live projects and developed hands-on skills in Java and web
-                                                development.</li>
-                                            <li>Improved communication, collaboration, and coding best practices.</li>
-                                            <li>Learned deployment, debugging, and code optimization techniques.</li>
-                                        </ul>
-                                        <div class="xp-actions">
-                                            <a class="btn-chip" href="images/nirmaan-certificate.png"
-                                                target="_blank">View Certificate</a>
-                                            <a class="btn-chip" href="https://www.nirmaan.org/"
-                                                target="_blank">Organization Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                        </div>
-                    </div>
-
-                    <!-- Right Button -->
-                    <button class="car-btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
-                </div>
-
-                <!-- Indicators BELOW the carousel -->
-                <div class="indicators">
-                    <button class="slide" data-index="0">#1</button>
-                    <button class="slide" data-index="1">#2</button>
-                    <button class="slide" data-index="2">#3</button>
-                    <button class="slide" data-index="3">#4</button>
-                    <button class="slide" data-index="4">#5</button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ================== CERTIFICATES ================== -->
-    <section id="certificates" class="section">
-        <div class="container">
-            <h3 class="section-title" data-aos="fade-up">Certificates</h3>
-            <div class="table-wrap" data-aos="fade-up">
-                <table class="cert-table">
-                    <thead>
-                        <tr>
-                            <th>S.No</th>
-                            <th>Certificate</th>
-                            <th>Organization</th>
-                            <th>Description</th>
-                            <th>Media</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Web Development Concepts</td>
-                            <td><img src="images/infosys logo.png" alt="Infosys"></td>
-                            <td>Front-end foundations in HTML, CSS, and JavaScript with responsive practices.</td>
-                            <td><a class="btn btn-chip" href="images/web development concepts infosys.pdf"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Full Stack Internship</td>
-                            <td><img src="images/edureka_logo.jpg" alt="Edureka"></td>
-                            <td>Hands-on internship covering front-end and back-end integration.</td>
-                            <td><a class="btn btn-chip"
-                                    href="images/full stack web development internship program edureka.pdf"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Responsive Web Design</td>
-                            <td><img src="images/free_code_camp_logo.jpg" alt="FreeCodeCamp"></td>
-                            <td>Modern layout techniques and responsive multi-device experiences.</td>
-                            <td><a class="btn btn-chip" href="images/reproductive web design freecodecamp.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>JavaScript for Beginners</td>
-                            <td><img src="images/udemy logo.png" alt="Udemy"></td>
-                            <td>Core JavaScript concepts, DOM manipulation, events, and problem-solving.</td>
-                            <td><a class="btn btn-chip" href="images/javascript for begineers udemy.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Microsoft Excel</td>
-                            <td><img src="images/udemy logo.png" alt="Udemy"></td>
-                            <td>Mastering formulas, functions, and Excel productivity essentials.</td>
-                            <td><a class="btn btn-chip" href="images/microsoft excel udemy.jpg" target="_blank">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Excel for Beginners</td>
-                            <td><img src="images/gl logo.jpg" alt="Great Learning"></td>
-                            <td>Basics of Excel for data entry, formatting, and visualization.</td>
-                            <td><a class="btn btn-chip" href="images/excel for begineers great learning.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Python Fundamentals</td>
-                            <td><img src="images/gl logo.jpg" alt="Great Learning"></td>
-                            <td>Introduction to Python programming for beginners with coding exercises.</td>
-                            <td><a class="btn btn-chip"
-                                    href="images/python fundamentals for begineers great learning.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Artificial Intelligence</td>
-                            <td><img src="images/infosys logo.png" alt="Infosys"></td>
-                            <td>AI basics including machine learning and automation concepts.</td>
-                            <td><a class="btn btn-chip" href="images/artificial intelligence infosys.pdf"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Soft Skills Training</td>
-                            <td><img src="images/NPTEL logo.jpg" alt="NPTEL"></td>
-                            <td>Professional communication, teamwork, and personality development.</td>
-                            <td><a class="btn btn-chip" href="images/soft skill traning NPTEL.pdf"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Networking</td>
-                            <td><img src="images/infosys logo.png" alt="Infosys"></td>
-                            <td>Fundamentals of computer networking, protocols, and security basics.</td>
-                            <td><a class="btn btn-chip" href="images/networking infosys.pdf" target="_blank">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>Cloud Computing</td>
-                            <td><img src="images/simplilearn logo.png" alt="Simplilearn"></td>
-                            <td>Introduction to cloud computing and virtualized environments.</td>
-                            <td><a class="btn btn-chip" href="images/introduction to cloud computing simplilearn.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Internet of Things</td>
-                            <td><img src="images/simplilearn logo.png" alt="Simplilearn"></td>
-                            <td>IoT fundamentals and integration with cloud and edge devices.</td>
-                            <td><a class="btn btn-chip" href="images/introduction to iot simplilearn.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>Java Full Stack — Completion</td>
-                            <td><img src="images/nirmaan logo.jpeg" alt="Nirmaan"></td>
-                            <td>Completion certificate for Java full-stack development training.</td>
-                            <td><a class="btn btn-chip" href="images/nirmaan java full stack certificate.jpg"
-                                    target="_blank">View</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- ================== ACHIEVEMENTS ================== -->
-    <section id="achievements" class="section">
-        <h3 class="section-title">Achievements</h3>
-
-        <div class="ach-carousel">
-            <button class="ach-btn prev">&#10094;</button>
-
-            <div class="ach-viewport">
-                <div class="ach-track">
-
-                    <!-- Slide 1 -->
-                    <div class="ach-slide" style="background-image:url('images/artcom.jpeg')">
-                        <div class="ach-overlay">
-                            <h4>Second Place — Creative Arts</h4>
-                            <p>Secured second place during NAMMA VEC College Day (Velammal Engineering College).</p>
-                            <a href="images/Creative Art Namma VEC College Day.jpeg" target="_blank"
-                                class="ach-link">View Certificate</a>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="ach-slide" style="background-image:url('images/ssnconfo.jpeg')">
-                        <div class="ach-overlay">
-                            <h4>Project Presentation</h4>
-                            <p>Presented my project <b>Voice-Controlled Automated Wheelchair with Health Monitoring</b>
-                                at SSN Conference.</p>
-                            <a href="images/ssn.jpeg" target="_blank" class="ach-link">View Certificate</a>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Slide 3 -->
-                    <div class="ach-slide" style="background-image:url('images/linked.jpeg')">
-                        <div class="ach-overlay">
-                            <h4>Event Coordinator</h4>
-                            <p>Coordinated <strong>ELECTROWIZ’25</strong> (ECE Dept., VEC) ensuring smooth execution and
-                                participation.</p>
-                            <a href="images/Linkedup-ELECTROWIZ'25.pdf" target="_blank" class="ach-link">View
-                                Certificate</a>
-                        </div>
-                    </div>
-                    <div class="ach-slide" style="background-image:url('images/Races\'24 National Conference.jpeg')">
-                        <div class="ach-overlay">
-                            <h4>Paper Presentation</h4>
-                            <p>Presented research at RACES’24 — Recent Advancements in Communication, Electronics &
-                                Signal Processing.</p>
-                            <a href="images/Races'24 National Conference.jpeg" target="_blank" class="ach-link">View
-                                Certificate</a>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="tech-row1">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>JSP</span>
+              <span>Java</span>
+              <span>JDBC</span>
+              <span>MySQL</span>
             </div>
 
-            <button class="ach-btn next">&#10095;</button>
-        </div>
+            <span type="button" class="card1-cta">Demo Video →</span>
+          </a>
+
+          <!-- Popup Modal -->
+          <div id="videoModal2" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="video-modal__content">
+              <button type="button" class="video-modal__close2" aria-label="Close video">
+                &times;
+              </button>
+
+              <!-- LinkedIn Preview -->
+              <div class="linkedin-preview" style="text-align:center; padding:30px;">
+                <h3 style="color:white; margin-bottom:20px;">
+                  Watch the demo on LinkedIn
+                </h3>
+
+                <a href="https://www.linkedin.com/posts/harshavardhini-p-p-791765277_fakeprescriptiondetector-javadeveloper-jsp-activity-7422578374222487552-4QiV"
+                  target="_blank" class="linkedin-btn">
+                  ▶ Open LinkedIn Video
+                </a>
+              </div>
+            </div>
+          </div>
+
     </section>
+    <br>
 
+    <!-- PROJECTS (side by side boxes) -->
 
+    <div class="wrap">
+      <h2 class="section-title">Academic Projects</h2>
 
-
-
-
-
-    <!-- CONTACT (curved bottom) -->
-    <section id="contact" class="contact">
-        <div class="wrap contact-inner">
-            <h2 class="section-title">Contact</h2>
-            <form id="contact-form" class="contact-form" novalidate>
-                <div class="form-row">
-                    <label>Name*</label>
-                    <input id="name" name="name" type="text" required>
-                </div>
-                <div class="form-row">
-                    <label>Email*</label>
-                    <input id="email" name="email" type="email" required>
-                </div>
-                <div class="form-row">
-                    <label>Phone</label>
-                    <input id="phone" name="phone" type="tel">
-                </div>
-                <div class="form-row">
-                    <label>Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="form-row">
-                    <button class="btn primary" type="submit">Send Message</button>
-                    <span id="form-status" class="muted"></span>
-                </div>
-            </form>
+      <div class="projects-grid two-columns">
+        <!-- Project 1 -->
+        <div class="proj-showcase">
+          <div class="proj-left">
+            <h3>Wireless Electronic Noticeboard</h3>
+            <p>
+              Built a <strong>real-time wireless noticeboard</strong> using
+              <strong>Arduino UNO</strong> and <strong>HC-05 Bluetooth</strong>.
+              Handled both hardware interfacing and mobile app integration.
+            </p>
+            <div class="proj-meta">
+              <span>Arduino</span><span>Bluetooth</span><span>Embedded</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <img src="images/minidemo.jpeg" alt="Noticeboard Project" />
+          </div>
         </div>
-        <svg class="contact-wave" viewBox="0 0 1440 80" preserveAspectRatio="none">
-            <path fill="#0b0f1a" d="M0 80L1440 0V80z"></path>
-        </svg>
-    </section>
 
-    <footer class="footer">
-        <div class="wrap footer-inner">
-            <center>
-                <div><a href="https://harshaperiyar10042003.github.io/My-Portfolio/" target="_blank">© <span
-                            id="year"></span> Harshavardhini</div></a>
-            </center>
-            <div>
-                <a href="#home" class="to-top">Back to top ↑</a>
+        <!-- Project 2 -->
+        <div class="proj-showcase">
+          <div class="proj-left">
+            <h3>Voice-Controlled Automated Wheelchair</h3>
+            <p>
+              Prototype for mobility assistance with <strong>voice commands</strong>
+              and <strong>GSM alerts</strong>. Integrated sensors for safety and monitoring.
+            </p>
+            <div class="proj-meta">
+              <span>Embedded</span><span>IoT</span><span>GSM</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <img src="images/finaldemo.jpeg" alt="Wheelchair Project" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== EXPERIENCE ================== -->
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h3 class="section-title" data-aos="fade-up">Experience</h3>
+
+      <!-- Experience Carousel -->
+      <div id="experience-carousel" data-aos="fade-up">
+
+        <!-- Carousel Flex -->
+        <div class="carousel">
+          <!-- Left Button -->
+          <button class="car-btn prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+
+          <!-- Slides -->
+          <div class="car-viewport">
+            <div class="xp-track">
+
+              <!-- Slide 1 -->
+              <!-- Slide 1 -->
+              <article class="xp-card glass">
+                <div class="xp-content">
+                  <div class="xp-text">
+                    <div class="xp-head">
+                      <img class="xp-logo-inline" src="images/dlk carrer development loo.jpeg" alt="DLK Logo">
+                      <h4>DLK Career Development — Web Developer Intern</h4>
+                      <span class="xp-time">Nov 2023 – Dec 2023</span>
+                    </div>
+
+                    <p>
+                      Built responsive web pages using <strong>HTML, CSS, and JavaScript</strong>.
+                      Collaborated with designers to enhance UI/UX and optimized website
+                      performance across devices.
+                    </p>
+                    <ul class="xp-list">
+                      <li>Developed dynamic components and interactive layouts.</li>
+                      <li>Implemented responsive design principles and debugging workflow.</li>
+                      <li>Worked in an agile environment, learning team collaboration and version
+                        control.</li>
+                    </ul>
+                    <div class="xp-actions">
+                      <a class="btn-chip" href="images/web development internship at DLK Carrer Development.png"
+                        target="_blank">View Certificate</a>
+                      <a class="btn-chip" href="https://dlkcareerdevelopment.com/" target="_blank">Company Website</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- Slide 2 -->
+              <article class="xp-card glass">
+                <div class="xp-content">
+                  <div class="xp-text">
+                    <div class="xp-head">
+                      <img class="xp-logo-inline" src="images/letsgrowmore_logo.jpeg" alt="LGM Logo">
+                      <h4>Let’s Grow More — Web Developer Intern</h4>
+                      <span class="xp-time">Aug 2023</span>
+                    </div>
+                    <p>
+                      Contributed to front-end development of web apps, focusing on
+                      <strong>responsive layouts</strong> and <strong>user-centric
+                        interfaces</strong>. Enhanced accessibility and cross-browser
+                      compatibility.
+                    </p>
+                    <ul class="xp-list">
+                      <li>Delivered clean, maintainable, and reusable code.</li>
+                      <li>Optimized interaction states and animations for better user engagement.
+                      </li>
+                      <li>Worked with Git for version control and collaborated with the
+                        development team efficiently.</li>
+                    </ul>
+                    <div class="xp-actions">
+                      <a class="btn-chip" href="images/web development internship at lgm.pdf" target="_blank">View
+                        Certificate</a>
+                      <a class="btn-chip" href="https://letsgrowmore.in/" target="_blank">Company
+                        Website</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- Slide 3 -->
+              <article class="xp-card glass">
+                <div class="xp-content">
+                  <div class="xp-text">
+                    <div class="xp-head">
+                      <img class="xp-logo-inline" src="images/nsic logo.jpeg" alt="NSIC Logo">
+                      <h4>NSIC Technical Services Centre — Intern</h4>
+                      <span class="xp-time">Jun 2023</span>
+                    </div>
+                    <p>
+                      Hands-on experience with network setup and troubleshooting. Focused on
+                      <strong>performance optimization</strong> and <strong>network
+                        security</strong> in practical IoT and networking scenarios.
+                    </p>
+                    <ul class="xp-list">
+                      <li>Configured networking devices and monitored IoT systems.</li>
+                      <li>Learned practical skills in network protocols and security.</li>
+                      <li>Enhanced problem-solving and technical documentation abilities.</li>
+                    </ul>
+                    <div class="xp-actions">
+                      <a class="btn-chip" href="images/Networking Internship NSIC .jpeg" target="_blank">View
+                        Certificate</a>
+                      <a class="btn-chip" href="https://www.nsic.co.in/" target="_blank">Company
+                        Website</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- Slide 4 -->
+              <article class="xp-card glass">
+                <div class="xp-content">
+                  <div class="xp-text">
+                    <div class="xp-head">
+                      <img class="xp-logo-inline" src="images/bsnl logo.jpeg" alt="BSNL Logo">
+                      <h4>BSNL — In-plant Training</h4>
+                      <span class="xp-time">Jan 2023</span>
+                    </div>
+                    <p>
+                      Gained exposure to telecom network setup and infrastructure management.
+                      Observed operational protocols and reliability practices in large-scale
+                      telecom environments.
+                    </p>
+                    <ul class="xp-list">
+                      <li>Studied network architecture and infrastructure management.</li>
+                      <li>Learned practical aspects of scaling, redundancy, and maintenance.</li>
+                      <li>Understood the importance of service reliability and uptime in telecom
+                        systems.</li>
+                    </ul>
+                    <div class="xp-actions">
+                      <a class="btn-chip" href="images/telecommunication internship at bsnl.pdf" target="_blank">View
+                        Certificate</a>
+                      <a class="btn-chip" href="https://www.bsnl.co.in/" target="_blank">Company
+                        Website</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- Slide 5 -->
+              <article class="xp-card glass">
+                <div class="xp-content">
+                  <div class="xp-text">
+                    <div class="xp-head">
+                      <img class="xp-logo-inline" src="images/nirmaan logo.jpeg" alt="Nirmaan Logo">
+                      <h4>Nirmaan Organization — 3-Month Training Program</h4>
+                      <span class="xp-time">May 2023 – Jul 2023</span>
+                    </div>
+                    <p>
+                      Completed an intensive 3-month program on <strong>full-stack development,
+                        Java, and web technologies</strong>. Focused on practical projects,
+                      teamwork, and real-world problem solving.
+                    </p>
+                    <ul class="xp-list">
+                      <li>Worked on live projects and developed hands-on skills in Java and web
+                        development.</li>
+                      <li>Improved communication, collaboration, and coding best practices.</li>
+                      <li>Learned deployment, debugging, and code optimization techniques.</li>
+                    </ul>
+                    <div class="xp-actions">
+                      <a class="btn-chip" href="images/nirmaan-certificate.png" target="_blank">View Certificate</a>
+                      <a class="btn-chip" href="https://www.nirmaan.org/" target="_blank">Organization Website</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
 
             </div>
-        </div>
-    </footer>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="script.js"></script>
+          <!-- Right Button -->
+          <button class="car-btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Indicators BELOW the carousel -->
+        <div class="indicators">
+          <button class="slide" data-index="0">#1</button>
+          <button class="slide" data-index="1">#2</button>
+          <button class="slide" data-index="2">#3</button>
+          <button class="slide" data-index="3">#4</button>
+          <button class="slide" data-index="4">#5</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================== CERTIFICATES ================== -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <h3 class="section-title" data-aos="fade-up">Certificates</h3>
+      <div class="table-wrap" data-aos="fade-up">
+        <table class="cert-table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Certificate</th>
+              <th>Organization</th>
+              <th>Description</th>
+              <th>Media</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Web Development Concepts</td>
+              <td><img src="images/infosys logo.png" alt="Infosys"></td>
+              <td>Front-end foundations in HTML, CSS, and JavaScript with responsive practices.</td>
+              <td><a class="btn btn-chip" href="images/web development concepts infosys.pdf" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Full Stack Internship</td>
+              <td><img src="images/edureka_logo.jpg" alt="Edureka"></td>
+              <td>Hands-on internship covering front-end and back-end integration.</td>
+              <td><a class="btn btn-chip" href="images/full stack web development internship program edureka.pdf"
+                  target="_blank">View</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Responsive Web Design</td>
+              <td><img src="images/free_code_camp_logo.jpg" alt="FreeCodeCamp"></td>
+              <td>Modern layout techniques and responsive multi-device experiences.</td>
+              <td><a class="btn btn-chip" href="images/reproductive web design freecodecamp.jpg"
+                  target="_blank">View</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>JavaScript for Beginners</td>
+              <td><img src="images/udemy logo.png" alt="Udemy"></td>
+              <td>Core JavaScript concepts, DOM manipulation, events, and problem-solving.</td>
+              <td><a class="btn btn-chip" href="images/javascript for begineers udemy.jpg" target="_blank">View</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Microsoft Excel</td>
+              <td><img src="images/udemy logo.png" alt="Udemy"></td>
+              <td>Mastering formulas, functions, and Excel productivity essentials.</td>
+              <td><a class="btn btn-chip" href="images/microsoft excel udemy.jpg" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Excel for Beginners</td>
+              <td><img src="images/gl logo.jpg" alt="Great Learning"></td>
+              <td>Basics of Excel for data entry, formatting, and visualization.</td>
+              <td><a class="btn btn-chip" href="images/excel for begineers great learning.jpg" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Python Fundamentals</td>
+              <td><img src="images/gl logo.jpg" alt="Great Learning"></td>
+              <td>Introduction to Python programming for beginners with coding exercises.</td>
+              <td><a class="btn btn-chip" href="images/python fundamentals for begineers great learning.jpg"
+                  target="_blank">View</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Artificial Intelligence</td>
+              <td><img src="images/infosys logo.png" alt="Infosys"></td>
+              <td>AI basics including machine learning and automation concepts.</td>
+              <td><a class="btn btn-chip" href="images/artificial intelligence infosys.pdf" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Soft Skills Training</td>
+              <td><img src="images/NPTEL logo.jpg" alt="NPTEL"></td>
+              <td>Professional communication, teamwork, and personality development.</td>
+              <td><a class="btn btn-chip" href="images/soft skill traning NPTEL.pdf" target="_blank">View</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Networking</td>
+              <td><img src="images/infosys logo.png" alt="Infosys"></td>
+              <td>Fundamentals of computer networking, protocols, and security basics.</td>
+              <td><a class="btn btn-chip" href="images/networking infosys.pdf" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Cloud Computing</td>
+              <td><img src="images/simplilearn logo.png" alt="Simplilearn"></td>
+              <td>Introduction to cloud computing and virtualized environments.</td>
+              <td><a class="btn btn-chip" href="images/introduction to cloud computing simplilearn.jpg"
+                  target="_blank">View</a></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Internet of Things</td>
+              <td><img src="images/simplilearn logo.png" alt="Simplilearn"></td>
+              <td>IoT fundamentals and integration with cloud and edge devices.</td>
+              <td><a class="btn btn-chip" href="images/introduction to iot simplilearn.jpg" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Java Full Stack — Completion</td>
+              <td><img src="images/nirmaan logo.jpeg" alt="Nirmaan"></td>
+              <td>Completion certificate for Java full-stack development training.</td>
+              <td><a class="btn btn-chip" href="images/Harshavardhini.P.P infosys certificate.png"
+                  target="_blank">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ================== ACHIEVEMENTS ================== -->
+  <section id="achievements" class="section">
+    <h3 class="section-title">Achievements</h3>
+
+    <div class="ach-carousel">
+      <button class="ach-btn prev">&#10094;</button>
+
+      <div class="ach-viewport">
+        <div class="ach-track">
+
+          <!-- Slide 1 -->
+          <div class="ach-slide" style="background-image:url('images/artcom.jpeg')">
+            <div class="ach-overlay">
+              <h4>Second Place — Creative Arts</h4>
+              <p>Secured second place during NAMMA VEC College Day (Velammal Engineering College).</p>
+              <a href="images/Creative Art Namma VEC College Day.jpeg" target="_blank" class="ach-link">View
+                Certificate</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="ach-slide" style="background-image:url('images/ssnconfo.jpeg')">
+            <div class="ach-overlay">
+              <h4>Project Presentation</h4>
+              <p>Presented my project <b>Voice-Controlled Automated Wheelchair with Health Monitoring</b>
+                at SSN Conference.</p>
+              <a href="images/ssn.jpeg" target="_blank" class="ach-link">View Certificate</a>
+            </div>
+          </div>
+
+
+
+          <!-- Slide 3 -->
+          <div class="ach-slide" style="background-image:url('images/linked.jpeg')">
+            <div class="ach-overlay">
+              <h4>Event Coordinator</h4>
+              <p>Coordinated <strong>ELECTROWIZ’25</strong> (ECE Dept., VEC) ensuring smooth execution and
+                participation.</p>
+              <a href="images/Linkedup-ELECTROWIZ'25.pdf" target="_blank" class="ach-link">View
+                Certificate</a>
+            </div>
+          </div>
+          <div class="ach-slide" style="background-image:url('images/Races\'24 National Conference.jpeg')">
+            <div class="ach-overlay">
+              <h4>Paper Presentation</h4>
+              <p>Presented research at RACES’24 — Recent Advancements in Communication, Electronics &
+                Signal Processing.</p>
+              <a href="images/Races'24 National Conference.jpeg" target="_blank" class="ach-link">View
+                Certificate</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="ach-btn next">&#10095;</button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- CONTACT (curved bottom) -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <h2 class="section-title">Contact</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label>Name*</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label>Email*</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label>Phone</label>
+          <input id="phone" name="phone" type="tel">
+        </div>
+        <div class="form-row">
+          <label>Message*</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-row">
+          <button class="btn primary" type="submit">Send Message</button>
+          <span id="form-status" class="muted"></span>
+        </div>
+      </form>
+    </div>
+    <svg class="contact-wave" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path fill="#0b0f1a" d="M0 80L1440 0V80z"></path>
+    </svg>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <center>
+        <div><a href="https://harshaperiyar10042003.github.io/My-Portfolio/" target="_blank">© <span id="year"></span>
+            Harshavardhini</div></a>
+      </center>
+      <div>
+        <a href="#home" class="to-top">Back to top ↑</a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
