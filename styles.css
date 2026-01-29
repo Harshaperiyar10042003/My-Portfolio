@@ -66,7 +66,7 @@ body{
 .glass{background:var(--glass);border:1px solid var(--stroke)}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-radius:12px;font-weight:700;border:1px solid transparent;transition:transform .18s ease, background .28s ease, border-color .28s ease}
 .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#111}
-.btn.primary:hover{transform:translateY(-2px)}
+.btn-primary:hover{transform:translateY(-2px)}
 .btn.ghost{background:transparent;border-color:var(--stroke);color:#fff}
 .btn.ghost:hover{background:var(--glass)}
 
@@ -160,6 +160,7 @@ body{
   text-align: center;
   background: linear-gradient(270deg, #facc15, #32cd89, #ff6b6b, #facc15);
   background-size: 800% 800%;
+  background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 8s ease infinite;
@@ -282,7 +283,7 @@ body{
 /* =========================
    EDUCATION STEPPER (Poppins headings)
    ========================= */
-.about-card.glass{background:rgba(20,20,20,.85);border-radius:20px;padding:0 0 20px;box-shadow:0 8px 25px rgba(0,0,0,.6);max-width:1550px;margin:10 auto;border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+.about-card.glass{background:rgba(20,20,20,.85);border-radius:20px;padding:0 0 20px;box-shadow:0 8px 25px rgba(0,0,0,.6);max-width:1550px;margin:10px auto;border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}
 .about-card h4.sub-title{font:700 32px/1 'Poppins', sans-serif;margin:24px 0 28px;text-align:center;color:#fff;text-transform:uppercase;letter-spacing:1px}
 .edu-stepper{display:flex;justify-content:space-between;position:relative;margin:0 auto;max-width:1350px}
 .edu-stepper::before{content:"";position:absolute;top:38px;left:90px;right:90px;height:1px;background:#333;z-index:1;border-radius:1px}
@@ -497,7 +498,7 @@ body{
 
 .linkedin-btn:hover {
   background: #005582;
-
+}
 
 /* =========================
    PROJECTS LIST (cyan accent)
@@ -557,7 +558,7 @@ body{
   object-fit: contain;
   border: 2px solid rgba(255, 255, 255, 0.2);
   background: #222;
-  padding: 0 px;
+  padding: 0px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -722,4 +723,41 @@ align-items: center;
   .footer .footer-inner{flex-direction:column;text-align:center}
 }
 
+.tech-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+  }
 
+  .tech-cards li {
+    background: #1e1e2f; /* dark card */
+    color: #fff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: default;
+  }
+
+  .tech-cards li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .tech-cards li span {
+    font-size: 1.8rem;
+  }
+
+  .tech-cards li strong {
+    display: block;
+    font-size: 1rem;
+    color: #ffd700; /* golden heading */
+  }
+
+  
